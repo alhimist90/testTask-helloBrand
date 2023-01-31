@@ -3,6 +3,7 @@
   "version": "2.1.0",
   "description": "gulp-builder for weblayout",
   "main": "gulpfile.js",
+  "homepage": "https://alhimist90.github.io/testTask-helloBrand/",
   "scripts": {
     "html": "node-w3c-validator -f lint -evH -i app/**/*.html",
     "dev": "gulp",
@@ -11,7 +12,8 @@
     "backend": "gulp backend",
     "zip": "gulp zip",
     "code": "editorconfig-checker",
-    "deploy": "gh-pages -d build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d app"
   },
   "author": "alhimist90",
   "license": "",
