@@ -1,0 +1,61 @@
+.socials__list {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+
+  @include vp-1023 {
+    gap: 15px;
+  }
+}
+
+.socials__item a {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 48px;
+  height: 48px;
+
+  border: 2px solid #fff;
+  border-radius: 50%;
+
+  transition: 0.2s;
+
+  &:hover {
+    color: #000;
+    background-color: #fff;
+  }
+
+  @include vp-1023 {
+    font-size: 14px;
+
+    width: 45px;
+    height: 45px;
+  }
+
+  @include vp-767 {
+    font-size: 13px;
+
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.socials-item--black a {
+  border: 2px solid #000;
+
+  color: #000;
+
+  transition: 0.2s;
+
+  &:hover {
+    color: #fff;
+
+    background-color: #000;
+  }
+}

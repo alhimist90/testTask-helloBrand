@@ -1,0 +1,43 @@
+.button {
+  display: inline-block;
+
+  text-align: center;
+
+  min-width: 270px;
+
+  padding: 36px 60px;
+
+  appearance: none;
+
+  background: #3A4574;
+
+  font-family: inherit;
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+
+  &:hover {
+    background-color: #2d3763;
+  }
+
+  @include vp-1023 {
+    min-width: 250px;
+
+    padding: 30px 40px;
+
+    font-size: 16px;
+  }
+
+  @include vp-767 {
+    min-width: 220px;
+
+    padding: 25px 35px;
+
+    font-size: 14px;
+  }
+}

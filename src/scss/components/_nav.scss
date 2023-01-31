@@ -1,0 +1,43 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 130px;
+  padding-top: 50px;
+
+  @include vp-1023 {
+    margin-bottom: 100px;
+  }
+
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+
+  @include vp-1023 {
+    gap: 20px
+  }
+}
+
+.nav__item a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+
+  transition: 0.2s;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  @include vp-1023 {
+    font-size: 14px;
+  }
+}

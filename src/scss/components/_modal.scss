@@ -1,0 +1,12 @@
+.graph-modal__container {
+  padding: 60px;
+
+  @include vp-767 {
+    padding: 20px;
+  }
+}
+
+.graph-modal__close {
+  right: 20px;
+  top: 20px;
+}

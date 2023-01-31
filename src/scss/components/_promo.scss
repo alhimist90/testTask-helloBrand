@@ -1,0 +1,62 @@
+.promo__text {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.06em;
+  color: #fff;
+  text-transform: uppercase;
+
+  margin: 0;
+  margin-bottom: 10px;
+
+  @include vp-1023 {
+    font-size: 20px;
+  }
+
+  @include vp-767 {
+    font-size: 17px;
+
+    text-align: center;
+  }
+}
+
+.promo__title {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 88px;
+  color: #fff;
+
+  margin: 0;
+  margin-bottom: 30px;
+
+  @include vp-1023 {
+    font-size: 50px;
+    line-height: 72px;
+  }
+
+  @include vp-767 {
+    font-size: 40px;
+    line-height: 60px;
+
+    text-align: center;
+  }
+}
+
+.promo__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+
+  @include vp-767 {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.promo__button {
+
+  @include vp-767 {
+    margin-bottom: 25px;
+  }
+}
+

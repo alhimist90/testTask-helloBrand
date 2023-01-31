@@ -1,0 +1,100 @@
+.quotes {
+  min-height: 780px;
+
+  background-color: #3A4574;
+
+  display: flex;
+  align-items: center;
+
+  @include vp-1023 {
+    min-height: 600px;
+  }
+}
+
+.quote {
+  padding-top: 85px;
+
+  margin: 0;
+
+  position: relative;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 0);
+
+    width: 83px;
+    height: 60px;
+
+    background-image: url(../img/quotes.svg);
+    background-repeat: no-repeat;
+  }
+}
+
+.quote__title {
+  text-align: center;
+
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 40px;
+  color: #D3B47F;
+
+  margin: 0;
+  margin-bottom: 20px;
+
+  @include vp-1023 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+}
+
+.quotes__blockquote {
+  max-width: 780px;
+
+  text-align: center;
+
+  margin: 0;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 40px;
+  color: #fff;
+
+  @include vp-1023 {
+    max-width: 540px;
+
+    font-size: 13px;
+    line-height: 35px;
+
+    margin-bottom: 20px;
+  }
+}
+
+.quotes__figcaption {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 40px;
+  letter-spacing: 0.245em;
+  color: #D3B47F;
+  text-transform: uppercase;
+
+  text-align: center;
+
+  @include vp-1023 {
+    font-size: 22px;
+  }
+}
+
+.swiper-quotes-button-prev,
+.swiper-quotes-button-next {
+  @include vp-767 {
+    top: 6%;
+  }
+}
+

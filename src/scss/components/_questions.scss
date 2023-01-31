@@ -1,0 +1,10 @@
+.questions__title {
+  text-transform: lowercase;
+
+  @include vp-1023 {
+    margin-bottom: 10px;
+  }
+}
+
+
+
